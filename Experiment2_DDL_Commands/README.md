@@ -128,7 +128,8 @@ ON DELETE CASCADE
 
 **Output:**
 
-![Output1](output.png)
+<img width="1366" height="484" alt="image" src="https://github.com/user-attachments/assets/5009c51f-bf07-40f6-a400-8458ebd5e6ca" />
+
 
 **Question 2**
 
@@ -141,7 +142,8 @@ ALTER TABLE books ADD COLUMN domain_dep varchar(30);
 
 **Output:**
 
-![Output2](output.png)
+<img width="782" height="388" alt="image" src="https://github.com/user-attachments/assets/17aeed2c-2134-494a-884b-1f3dc56de32e" />
+
 
 **Question 3**
 
@@ -155,7 +157,8 @@ VALUES(204,'Samuel Black','M');
 
 **Output:**
 
-![Output3](output.png)
+<img width="784" height="202" alt="image" src="https://github.com/user-attachments/assets/a4f1fe48-a368-410d-bbc3-60dcb1bd5a1b" />
+
 
 **Question 4**
 
@@ -170,7 +173,8 @@ FROM Old_customers;
 
 **Output:**
 
-![Output4](output.png)
+<img width="783" height="248" alt="image" src="https://github.com/user-attachments/assets/49b903d5-402d-47a9-8714-92a1b5471b8a" />
+
 
 **Question 5**
 
@@ -192,7 +196,8 @@ CustomerID  INTEGER
 
 **Output:**
 
-![Output5](output.png)
+<img width="783" height="312" alt="image" src="https://github.com/user-attachments/assets/55b661ed-d1e9-433a-8422-8a47393d7583" />
+
 
 **Question 6**
 
@@ -219,7 +224,8 @@ FOREIGN KEY(OrderID) REFERENCES Orders(OrderID)
 
 **Output:**
 
-![Output6](output.png)
+<img width="778" height="155" alt="image" src="https://github.com/user-attachments/assets/10bebf5d-320f-4034-9b64-9b38b43f34d1" />
+
 
 **Question 7**
 
@@ -236,7 +242,8 @@ VALUES
 
 **Output:**
 
-![Output7](output.png)
+<img width="778" height="250" alt="image" src="https://github.com/user-attachments/assets/a710ef72-a992-4241-9340-7d18da5ebf1c" />
+
 
 **Question 8**
 
@@ -260,7 +267,8 @@ StockQuantity INTEGER CHECK (StockQuantity >=0)
 ```
 **Output:**
 
-![Output8](output.png)
+<img width="1185" height="266" alt="image" src="https://github.com/user-attachments/assets/b20b4f8a-ecdf-4e15-8035-c2a4616f000c" />
+
 
 **Question 9**
 
@@ -272,7 +280,8 @@ ALTER TABLE customer ADD COLUMN  birth_date   timestamp ;
 
 **Output:**
 
-![Output9](output.png)
+<img width="780" height="377" alt="image" src="https://github.com/user-attachments/assets/1ca57fa4-1461-437c-bc27-02c770191de0" />
+
 
 **Question 10**
 
@@ -309,7 +318,8 @@ CHECK(list_price >= 0)
 
 **Output:**
 
-![Output10](output.png)
+<img width="781" height="226" alt="image" src="https://github.com/user-attachments/assets/503ef8d7-d158-456a-932d-f155f0ff4306" />
+
 
 
 ## RESULT
