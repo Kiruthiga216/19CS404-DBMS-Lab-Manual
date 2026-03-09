@@ -46,124 +46,157 @@ Used to retrieve records from a table.
 SELECT column1, column2 FROM table_name WHERE condition;
 ```
 **Question 1**
---
--- Paste Question 1 here
 
-```sql
--- Paste your SQL code below for Question 1
+Write a SQL query to find all employees who were hired in the year 2022 from emp table
+
+```
+SELECT *
+FROM emp
+WHERE strftime('%Y',hiredate)='2022';
 ```
 
 **Output:**
 
-![Output1](output.png)
+<img width="788" height="351" alt="image" src="https://github.com/user-attachments/assets/ea12cb23-800e-4d5b-82d5-7db0a10e9f0c" />
+
 
 **Question 2**
----
--- Paste Question 2 here
 
-```sql
--- Paste your SQL code below for Question 2
+Write a SQL query to label rows in the Calculations table as 'Even' if value1 is even, otherwise 'Odd'
+
+```
+SELECT id,
+       value1,
+       CASE
+           WHEN value1%2==0 THEN 'Even'
+           ELSE 'Odd'
+       END AS parity
+FROM Calculations;
 ```
 
 **Output:**
 
-![Output2](output.png)
+<img width="540" height="168" alt="image" src="https://github.com/user-attachments/assets/3a1aa750-dd5d-4040-a733-9857cd7a5278" />
 
 **Question 3**
----
--- Paste Question 3 here
 
-```sql
--- Paste your SQL code below for Question 3
+Write a SQL query to Select all patients whose name starts with A
+
+```
+SELECT *
+FROM Patients
+WHERE first_name LIKE 'A%';
 ```
 
 **Output:**
 
-![Output3](output.png)
+<img width="783" height="182" alt="image" src="https://github.com/user-attachments/assets/4a8412c0-0dd0-4392-b2fc-c8a9d61df7e6" />
+
 
 **Question 4**
----
--- Paste Question 4 here
 
-```sql
--- Paste your SQL code below for Question 4
+Write a SQL query to calculate the number of days between the hiredate and a specified date ('2024-12-31') for each employee using
+the JULIANDAY function from the emp table
+
+```
+SELECT ename,
+       hiredate,
+       JULIANDAY('2024-12-31')-JULIANDAY(hiredate) AS days_worked
+FROM emp;
 ```
 
 **Output:**
 
-![Output4](output.png)
+<img width="565" height="162" alt="image" src="https://github.com/user-attachments/assets/216e30a8-fcd1-4c1d-a317-d3f5fcc22d1b" />
 
 **Question 5**
----
--- Paste Question 5 here
 
-```sql
--- Paste your SQL code below for Question 5
+Write a SQL statement to Display the order number, orderdate and the purchase amount of
+orders table which will be delivered by the salesman with ID 5001
+
+```
+SELECT order_no,
+order_date,
+purch_amt
+FROM orders
+WHERE salesman_id =5001;
 ```
 
 **Output:**
 
-![Output5](output.png)
+<img width="532" height="202" alt="image" src="https://github.com/user-attachments/assets/96bb814a-a1fa-4232-911c-374c5628ae95" />
 
 **Question 6**
----
--- Paste Question 6 here
 
-```sql
--- Paste your SQL code below for Question 6
+Write a SQL query to Delete customers from 'customer' table where 'OPENING_AMT' is between 4000 and 6000.
+
+```
+DELETE FROM Customer
+WHERE OPENING_AMT BETWEEN 4000 AND 6000;
 ```
 
 **Output:**
 
-![Output6](output.png)
+<img width="777" height="864" alt="image" src="https://github.com/user-attachments/assets/6e7281a4-178c-4e60-b8c1-488c786110a5" />
+
 
 **Question 7**
----
--- Paste Question 7 here
 
-```sql
--- Paste your SQL code below for Question 7
+Write a SQL query to Delete customers from 'customer' table where 'GRADE' is greater than or equal to 2
+
+```
+DELETE FROM Customer
+WHERE GRADE>=2;
 ```
 
 **Output:**
 
-![Output7](output.png)
+<img width="466" height="364" alt="image" src="https://github.com/user-attachments/assets/c629ff9b-bb2d-40f8-8c49-0d20062f7b82" />
+
 
 **Question 8**
----
--- Paste Question 8 here
 
-```sql
--- Paste your SQL code below for Question 8
+Write a SQL statement to Double the salary for employees in department 20 who have a job_id ending with 'MAN'
+
+```
+UPDATE Employees
+SET salary=salary*2
+WHERE department_id=20
+      AND job_id LIKE '%MAN';
 ```
 
 **Output:**
 
-![Output8](output.png)
+<img width="784" height="329" alt="image" src="https://github.com/user-attachments/assets/78f3197e-c4c7-4e00-8f73-a2b9776d4395" />
+
 
 **Question 9**
----
--- Paste Question 9 here
 
-```sql
--- Paste your SQL code below for Question 9
+Write a SQL statement to change the email column of employees table with 'Unavailable' for all employees in employees table.
+
 ```
-
+UPDATE Employees
+SET email='Unavailable';
+```
 **Output:**
 
-![Output9](output.png)
+<img width="790" height="462" alt="image" src="https://github.com/user-attachments/assets/6a780995-9a5c-4e78-b4e2-91893eb122ec" />
+
 
 **Question 10**
----
--- Paste Question 10 here
 
-```sql
--- Paste your SQL code below for Question 10
+Write a SQL statement to change salary of employee to 8000 whose Employee ID is 105, if the existing salary is less than 5000
+
 ```
-
+UPDATE Employees
+SET salary=8000
+WHERE employee_id=105
+      AND salary<5000;
+```
 **Output:**
 
-![Output10](output.png)
+<img width="786" height="183" alt="image" src="https://github.com/user-attachments/assets/fe74ff3f-dbf4-425a-9f23-e7cd8c0a4817" />
+
 
 ## RESULT
 Thus, the SQL queries to implement DML commands have been executed successfully.
